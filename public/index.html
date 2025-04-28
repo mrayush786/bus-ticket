@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #141414; /* Netflix dark background */
+            color: #ffffff; /* White text */
+        }
+        header {
+            background: #e50914; /* Netflix red */
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #141414; /* Dark background */
+            padding: 0.5rem;
+            border-bottom: 2px solid #e50914; /* Red underline */
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #e50914; /* Netflix red */
+        }
+        .container {
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem;
+            background: #333333; /* Dark gray */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .hero h2 {
+            color: #e50914; /* Netflix red */
+            font-size: 2.5rem;
+        }
+        .hero button {
+            background: #e50914;
+            color: #ffffff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .hero button:hover {
+            background: #b20710; /* Darker red */
+            transform: scale(1.1);
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .feature {
+            background: #222222; /* Darker gray */
+            border: 2px solid #e50914; /* Red border */
+            border-radius: 8px;
+            padding: 1rem;
+            width: 30%;
+            margin: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+        }
+        .feature h3 {
+            color: #e50914; /* Netflix red */
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #141414; /* Dark background */
+            color: #ffffff;
+            margin-top: 2rem;
+            border-top: 2px solid #e50914; /* Red top border */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bus Ticket Management System</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="hero" id="home">
+            <h2>Welcome to the Bus Ticket Management System</h2>
+            <p>Book your tickets, manage schedules, and travel with ease.</p>
+            <button id="bookNowButton" onclick="location.href='book.html'">Book Now</button>
+        </section>
+        <section class="features" id="features">
+            <div class="feature">
+                <h3>Easy Booking</h3>
+                <p>Book your tickets online with just a few clicks.</p>
+            </div>
+            <div class="feature">
+                <h3>Real-Time Updates</h3>
+                <p>Get real-time updates on bus schedules and availability.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure Payments</h3>
+                <p>Pay securely using multiple payment options.</p>
+            </div>
+            <div class="feature">
+                <h3>Seat Selection</h3>
+                <p>Choose your preferred seat with our interactive seat map.</p>
+            </div>
+            <div class="feature">
+                <h3>Discount Offers</h3>
+                <p>Enjoy exclusive discounts and offers on your bookings.</p>
+            </div>
+            <div class="feature">
+                <h3>24/7 Support</h3>
+                <p>Contact our support team anytime for assistance.</p>
+            </div>
+        </section>
+    </div>
+    <footer id="contact">
+        <p>&copy; 2023 Bus Ticket Management System. All rights reserved.</p>
+    </footer>
+    <script>
+        // Add interactivity to the "Book Now" button
+        document.getElementById('bookNowButton').addEventListener('click', function() {
+            alert('Thank you for choosing our service! Booking feature coming soon.');
+        });
+
+        // Add animations to features on scroll
+        const features = document.querySelectorAll('.feature');
+        window.addEventListener('scroll', () => {
+            features.forEach(feature => {
+                const rect = feature.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    feature.style.animation = 'fadeIn 1s forwards';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

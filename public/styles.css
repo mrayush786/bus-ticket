@@ -1,0 +1,91 @@
+/* Base styles for the bus ticket system */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414; /* Netflix dark background */
+    color: #e5e5e5; /* Light gray text */
+}
+
+/* Header styles */
+header {
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Darker navigation bar */
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #e50914; /* Netflix red */
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area */
+main {
+    padding: 2rem;
+    background-color: #1f1f1f; /* Slightly lighter dark background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Button styles */
+button {
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b20710; /* Darker red for hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #e5e5e5;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Creative OS-inspired card design */
+.card {
+    background-color: #1f1f1f; /* Dark card background */
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #e50914; /* Netflix red */
+}
+
+.card p {
+    color: #e5e5e5; /* Light gray text */
+}
